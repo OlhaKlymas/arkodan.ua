@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>ArkoDan</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#04182f">
+  <link rel="icon" href="img/logo-icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+</head>
+<body>
+  <div id="popupOffer">
+    <div class="b-popup-content">
+      <div class="popup-content-close">
+        <a href="javascript:PopUpHideOffer()">
+          <span class="close"></span>
+        </a>
+      </div>
+      <form method="post" id="ajax_form" action="">
+        <h6>Закажите консультацию</h6>
+        <div class="form-wrap">
+          <p>Ваш телефон</p>
+          <input type="text" name="tel">
+          <p>Ваше имя</p>
+          <input type="text" name="name">
+        </div>
+        <input type="button" id="btn" value="Заказать" />
+      </form>
+      <div id="result_form">
+      </div>
+    </div>
+  </div>
+  <header class="header-wrap">
+    <div class="mobile-header">
+      <div class="logo"><a href="#section0"><img src="img/logo.png" class="mini-logo" title="Энергоэффективное отопление"></a></div>
+      <div class="head-phone">
+            <div class="phone">
+              <p><a href='tel:+380967632525'>+38(096)763-25-25</a></p>
+              <p><a href='tel:+380957632525'>+38(095)763-25-25</a></p>
+            </div>
+          </div>
+      <div class="b-container">
+        <a href="javascript:PopUpShow()" data-effect="mfp-move-from-top">
+          <div class="menu">
+            <i class="fas fa-bars"></i>
+            <p>меню</p>
+          </div>
+        </a>
+      </div>
+      <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+          <div class="popup-content-close">
+            <a href="javascript:PopUpHide()">
+              <span class="close"></span>
+            </a>
+          </div>
+          <div class="popup-content-list">
+            <ul>
+              <li data-menuanchor="section0" onclick='PopUpHide()'><a href="#section0"><span>главная</span></a></li>
+              <li data-menuanchor="section1"><a href="#section1" onclick='PopUpHide()'><span>преимущества</span></a></li>
+              <li data-menuanchor="section2"><a href="#section2" onclick='PopUpHide()'><span>технологии</span></a></li>
+              <li data-menuanchor="section3"><a href="#section3" onclick='PopUpHide()'><span>постановка задачи</span></a></li>
+              <li data-menuanchor="section4"><a href="#section4" onclick='PopUpHide()'><span>оценка</span></a></li>
+              <li data-menuanchor="section5"><a href="#section5" onclick='PopUpHide()'><span>разработка проекта</span></a></li>
+              <li data-menuanchor="section6"><a href="#section6" onclick='PopUpHide()'><span>контакты</span></a></li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li data-menuanchor="section0"><a href="#section0"><span>главная</span></a></li>
+        <li data-menuanchor="section1"><a href="#section1"><span>преимущества</span></a></li>
+        <li data-menuanchor="section2"><a href="#section2"><span>технологии</span></a></li>
+        <li data-menuanchor="section3"><a href="#section3"><span>постановка задачи</span></a></li>
+        <li data-menuanchor="section4"><a href="#section4"><span>оценка</span></a></li>
+        <li data-menuanchor="section5"><a href="#section5"><span>разработка проекта</span></a></li>
+        <li data-menuanchor="section6"><a href="#section6"><span>контакты</span></a></li>
+      </ul>
+    </nav>
+    <div class="head-wrap">
+        <div>
+          <a href="#section0"><img src="img/logo.png" class="mini-logo" title="Энергоэффективное отопление"></a>
+        </div>
+        <div class='description hide-block'>
+           <h1>Энергосберегающие решения<br>для промышленных объектов</h1>
+           <p>г.Харьков и Харьковская область</p>
+        </div>
+    </div>
+    <div class="head-contacts hide-block">
+          <div class="head-phone">
+            <img src="img/phone.png">
+            <div class="phone">
+              <p><a href='tel:+380967632525'>+38 (096) 763-25-25</a></p>
+              <p><a href='tel:+380957632525'>+38 (095) 763-25-25</a></p>
+            </div>
+          </div>
+          <div class="head-email">
+            <img src="img/email.png">
+            <div class="email">
+              <p>arkodan@arkodan.ua</p>
+            </div>
+          </div>
+    </div>
+    <div id="fp-nav">
+      <ul>
+        <li data-menuanchor="section0"><a href="#section0"><span></span></a></li>
+        <li data-menuanchor="section1"><a href="#section1"><span></span></a></li>
+        <li data-menuanchor="section2"><a href="#section2"><span></span></a></li>
+        <li data-menuanchor="section3"><a href="#section3"><span></span></a></li>
+        <li data-menuanchor="section4"><a href="#section4"><span></span></a></li>
+        <li data-menuanchor="section5"><a href="#section5"><span></span></a></li>
+        <li data-menuanchor="section6"><a href="#section6"><span></span></a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="fullpage">
+    <section class="active first-section" data-anchor="section0">
+      <video src="video.mp4" autoplay loop muted></video>
+      <div class="overlay">
+        <div class="text">
+          <p>Энергоэффективные решения <span>для производств</span>, предприятий и сооружений Украины с энергопотреблением <br><span>свыше 100 квт/час</span></p>
+          <div class="btn" onclick='PopUpShowOffer()'>
+            <a>получить консультацию или заказать проектное решение</a>
+          </div>
+          <a href="#section1"><i class="fas fa-angle-double-down"></i></a>
+        </div>          
+      </div>
+      <div class="bg-first"></div>
+    </section>
+    <section class="second-section" data-anchor="section1">
+      <div class="overlay">
+        <div class="wrap-block">
+          <div class="earlier">
+            <h6>Существующая производственная линия</h6>
+            <p>Чиллер (150 кВт) с потреблением 60кВт/час</p>
+            <p>Эл.-котел, нагрев (150 кВт) с потреблением 150 кВт/час</p>
+            <p>Загрузка оборудования - 3400 час/год = 714 000 кВт/год</p>
+            <p>Тариф - 2,85 грн/кВт = 2 034 900 грн/год</p>
+            <p>Стоимость оборудования и монтажа ~ 50 000 Euro</p>
+            <p>Годовые затраты - 3 584 900 гривен</p>
+          </div>
+          <div class="now">
+            <h6>Реализованное проектное решение</h6>
+            <p>Тепловой насос, охлаждения (150 кВт) с потреблением 20 кВт/час</p>
+            <p>Тепловой насос, обогрев (150 кВт + 30 кВт бытовые нужды) с потреблением 20 кВт/час</p>
+            <p>Загрузка оборудования - 3400 час/год = 136 000 кВт/год</p>
+            <p>Тариф - 2,85 грн/кВт = 387 600 грн/год</p>
+            <p>Стоимость оборудования и монтажа ~ 75 000 Euro</p>
+            <p>Годовые затраты - 2 712 600 гривен</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-first"></div>
+    </section>
+    <section class="third-section" data-anchor="section2">
+      <div class="overlay">
+        <div class="technology">
+          <div class="technology-block">
+             <div class="techno-main-block">
+                <div class="techno-head">
+                  <h5>Автоматизация</h5>
+                  <img src="img/arrow.png">
+                </div>
+                <div class="techno-effect">
+                  <p>10% Энегроэффективности</p>
+                </div>
+              </div>
+              <div class="techno-text-block">
+                <div class="techno-text">
+                  <p>Комплект автоматики, который позволяет объединить в систему <span>всё существующее отопительное и вентиляционное</span> оборудование помещений.
+                  </p>
+                </div>
+                <div class="techno-img-avto"></div>
+            </div>
+          </div>
+        </div>
+        <div class="technology">
+          <div class="technology-block">
+             <div class="techno-main-block">
+                <div class="techno-head">
+                  <h5>Конденсационная техника</h5>
+                  <img src="img/arrow.png">
+                </div>
+                <div class="techno-effect">
+                  <p>20% Энегроэффективности</p>
+                </div>
+              </div>
+              <div class="techno-text-block">
+                <div class="techno-text">
+                  <p>Принцип работы конденсационного котла в сочетании с грамотным <span>монтажом обеспечивает стабильную экономию в размере 20-25%</span> по сравнению с обычными газовыми котлами.
+                  </p>
+                </div>
+                <div class="techno-img-kond">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="technology">
+          <div class="technology-block">
+             <div class="techno-main-block">
+                <div class="techno-head">
+                  <h5>Рекуперация</h5>
+                  <img src="img/arrow.png">
+                </div>
+                <div class="techno-effect">
+                  <p>50% Энегроэффективности (т.е. в 2 раза!)</p>
+                </div>
+              </div>
+              <div class="techno-text-block">
+                <div class="techno-text">
+                  <p>Противоточный теплообменник облегченного монтажа <span>(рекуператор) позволяет вернуть 80-85%</span> затраченного тепла.
+                  </p>
+                </div>
+                <div class="techno-img-rekup">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="technology">
+          <div class="technology-block">
+             <div class="techno-main-block">
+                <div class="techno-head">
+                  <h5>Тепловые насосы</h5>
+                  <img src="img/arrow.png">
+                </div>
+                <div class="techno-effect">
+                  <p>75% Энегроэффективности (т.е. в 4 раза!)</p>
+                </div>
+              </div>
+              <div class="techno-text-block">
+                <div class="techno-text">
+                  <p>Тепловой насос – это система, которая переносит теплоту <span>от менее нагретых тел к более нагретым</span> за счет затрат дополнительной энергии.
+                  </p>
+                </div>
+                <div class="techno-img-nasosy">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="technology">
+          <div class="technology-block">
+             <div class="techno-main-block">
+                <div class="techno-head">
+                  <h5>Комбинирование систем</h5>
+                  <img src="img/arrow.png">
+                </div>
+                <div class="techno-effect">
+                  <p>85% Энегроэффективности (т.е. в 7.5 раз!)</p>
+                </div>
+              </div>
+              <div class="techno-text-block">
+                <div class="techno-text">
+                  <p>Грамотная компоновка отопительного и вентиляционного оборудования <span>для достижения наибольшей энергоэффективности</span> на производстве.
+                  </p>
+                </div>
+                <div class="techno-img-komb">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn" onclick='PopUpShowOffer()'><a>получить консультацию или заказать проектное решение</a></div>
+      </div>
+      <div class="bg-first"></div>
+    </section>
+    <section class="fourth-section" data-anchor="section3">
+      <div class="overlay">
+        <div class="task-bg"></div>
+        <div class="stages-bg">
+          <div class="stages">
+            <div class="stages-text">
+              <h2>этапы сотрудничества</h2>
+            </div>
+            <div class="stages-text-bg">
+              <P>этапы</P>
+            </div>
+          </div>
+        </div>        
+       <div class="task">
+        <div class="head">
+          <div class="head-h">
+            <h3>постановка задачи</h3>
+          </div>
+          <div class="head-bg">
+            <h4>задача</h4>
+          </div>
+        </div>
+        <div class="text">
+          <p>- исследование помещения на теплопотери <br>
+          - выявление недостатков существующей системы отопления,<br>
+          требующих реконструкции или модернизации<br>
+          - поиск источника энергии на производстве</p>
+        </div>
+       <div class="img">
+         <div class="graf-block">
+           <div class="graf-block-img">
+             <div class="graf-block-img-first"></div>
+           </div>
+           <div class="graf-block-text">
+             <p>Выезд инженеров на объект</p>
+           </div>
+         </div>
+         <div class="graf-block">
+           <div class="graf-block-img">
+             <div class="graf-block-img-second"></div>
+           </div>
+           <div class="graf-block-text">
+             <p>Осмотр системы </p>
+           </div>
+         </div>
+         <div class="graf-block">
+           <div class="graf-block-img">
+             <div class="graf-block-img-third"></div>
+           </div>
+           <div class="graf-block-text">
+             <p>Расчет теплопотерь</p>
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section class="fifth-section" data-anchor="section4">
+      <div class="overlay">
+        <div class="valuation-bg"></div>
+        <div class="valuation">
+          <div class="head">
+            <div class="head-h">
+              <h3>оценка</h3>
+            </div>
+            <div class="head-bg">
+              <h4>оценка</h4>
+            </div>
+          </div>
+          <div class="text">
+            <p>- разработка экономического обоснования</p>
+            <p> для модернизации или реконструкции системы на основе нескольких решений</p>
+            <p>- гидравлический расчет</p>
+            <p>- подбор оборудования для проекта системы отопления</p>
+          </div>
+          <div class="img">
+            <div class="logo-valutiol-block">
+              <img src="img/viessmann.png">
+              <img src="img/mitsubishi.png">
+              <img src="img/wolf.png">
+            </div>
+            <div class="logo-valutiol-block">
+              <img src="img/certificate-viessmann.jpg">
+              <img src="img/certificate-mitsubishi.jpg">
+              <img src="img/certificate-wolf.jpg">
+            </div>
+       </div>
+        </div>
+      </div>
+    </section>
+    <section class="sixth-section" data-anchor="section5">
+      <div class="overlay">
+        <div class="project-bg"></div>
+        <div class="project">
+          <div class="head">
+            <div class="head-h">
+              <h3>разработка проекта</h3>
+            </div>
+            <div class="head-bg">
+              <h4>проект</h4>
+            </div>
+          </div>
+          <div class="text">
+            <p>- строительные чертежи и пояснительная записка со спецификациями проекта системы отопления</p>
+            <p>- рассчитаем стоимость оборудования и монтажа по каждому решению, а также экономическую выгоду от их применения</p>
+            <p>-  полная спецификация оборудования и материалов</p>
+            <p>- прогноз затрат на энергоносители и период окупаемости инвестиций</p>
+          </div>
+          <div class="img">
+            <div class="img-project-block">
+            </div>
+            <div class="img-project-block">
+            </div>
+            <div class="img-project-block"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seventh-section" data-anchor="section6">
+      <div class="bg-contact"></div>
+      <div class="overlay">
+        <div class="contact-section">
+          <div class="contact-block">
+            <p><span>Контакты</span></p>
+            <p>ул. Ак. Проскуры, 1, <br> г.Харьков, Украина</p>
+            <p><a href='tel:+380967632525'>+38(096)763-25-25</a><br>
+              <a href='tel:+380957632525'>+38(095)763-25-25</a><br>
+              <a href='tel:+380577632525'>+38(057)763-25-25</a></p>
+            <p>arkodan@arkodan.ua</p>
+          </div>
+          <div class="form-block">
+            <form method="post" id="ajax_form_end" action="">
+              <h6>Закажите консультацию</h6>
+              <div class="form-wrap">
+                <p>Ваш телефон</p>
+                <input type="text" name="tel">
+                <p>Ваше имя</p>
+                <input type="text" name="name">
+              </div>
+              <input type="button" id="btnEnd" value="Заказать" />
+            </form>
+            <div id="result_form_end">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/formSubmit.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+</body>
+</html>
