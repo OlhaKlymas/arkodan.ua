@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>arcodan.ua</h1>
+   <h1>arkodan.ua</h1>
 </div>
 
 <h3 align="center">👋🏼 Приветсвую!</h3>
@@ -15,7 +15,7 @@
 
 ### 📸 Просмотр 
 Проект Вы можете посмотреть на GitHub Page:<br> 
-https://olhaklymas.github.io/arcodan.ua
+https://olhaklymas.github.io/arkodan.ua
 
 <br> 
 <div align="center">
