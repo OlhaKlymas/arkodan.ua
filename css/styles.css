@@ -163,7 +163,7 @@ header {
     display: flex; }
   #popupOffer form {
     width: 290px;
-    height: 305px; }
+    height: 280px; }
 
 .b-container {
   width: 92px;
@@ -717,7 +717,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    padding: 30px 10px 0px 10px; }
+    padding: 30px 10px 20px 10px; }
   .contact-section form .form-wrap label, .contact-section form button, #popupOffer form .form-wrap label, #popupOffer form button {
     font-family: "Lora", serif;
     font-style: italic;
