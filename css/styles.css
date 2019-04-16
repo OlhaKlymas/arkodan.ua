@@ -718,13 +718,13 @@ header {
     font-weight: bold;
     font-size: 18px;
     padding: 30px 10px 0px 10px; }
-  .contact-section form .form-wrap p, .contact-section form button, #popupOffer form .form-wrap p, #popupOffer form button {
+  .contact-section form .form-wrap label, .contact-section form button, #popupOffer form .form-wrap label, #popupOffer form button {
     font-family: "Lora", serif;
     font-style: italic;
     font-weight: bold; }
   .contact-section form .form-wrap, #popupOffer form .form-wrap {
     padding: 0px 30px; }
-    .contact-section form .form-wrap p, #popupOffer form .form-wrap p {
+    .contact-section form .form-wrap label, #popupOffer form .form-wrap label {
       text-align: left;
       margin: 25px 0px 0px 0px; }
     .contact-section form .form-wrap input, #popupOffer form .form-wrap input {
@@ -780,4 +780,3 @@ header {
     #ajax_form_end #btnEnd:active {
       color: #00acee; }
 
-/*# sourceMappingURL=styles.css.map */
