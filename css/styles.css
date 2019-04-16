@@ -300,13 +300,13 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   padding-top: 165px; }
-  .first-section .text p, .second-section .text p, .third-section .text p {
+  .first-section .text h2, .second-section .text p, .third-section .text p {
     margin: 0;
     font-family: "Lora", serif;
     font-size: 30px;
     font-style: italic;
     color: #fff; }
-    .first-section .text p span, .second-section .text p span, .third-section .text p span {
+    .first-section .text h2 span, .second-section .text p span, .third-section .text p span {
       color: #00acee; }
   .first-section .text .fas, .second-section .text .fas, .third-section .text .fas {
     color: #00acee;
