@@ -150,7 +150,7 @@ $(function(){
 		ulWidthCount = $('.banner-container li').length;
 		var imgWidth = $(this).find("img").width();
 		var bannerLi = winWidth - imgWidth;
-		var remWidth = ulWidthCount - 1;
+		var remWidth = ulWidthCount;
 		var appWidth = bannerLi/remWidth;
 		$(".banner-container li").stop(true, false).animate({width: appWidth},700);
 		$(this).stop(true, false).animate({width: imgWidth},700);
