@@ -160,4 +160,4 @@ $(function(){
 		$(".banner-container li").animate({width:winWidth/ulWidthCount},700);
 		$(this).find("span.overlay").fadeIn();
 	});
-});    
+});
