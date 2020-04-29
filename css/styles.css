@@ -780,3 +780,31 @@ header {
     #ajax_form_end #btnEnd:active {
       color: #00acee; }
 
+.banner-container {
+  overflow: hidden;
+  position: relative;
+}
+.banner-container li {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+.banner-container li a {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.banner-container li a img {
+  max-width: none;
+  height: 200px; /* Высота фотографий */
+}
+.banner-container li span.overlay {
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
