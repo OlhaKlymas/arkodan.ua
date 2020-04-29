@@ -133,5 +133,4 @@ $(function(){
 		$(".banner-container li").animate({width:winWidth/ulWidthCount},700);
 		$(this).find("span.overlay-n").fadeIn();
 	});
-	$(".banner-container li").firstChild().css('width', '100%');
 });

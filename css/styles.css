@@ -795,10 +795,29 @@ header {
   display: block;
   padding: 0px;
   margin: 0px;
-}
-.banner-container li a img {
   max-width: none;
-  height: 60vh; /* Высота фотографий */
+  height: 60vh;
+}
+.banner-container li a:nth-child(1){
+  background: url("../img/polygraphy1.jpg");
+}
+.banner-container li a:nth-child(2){
+  background: url("../img/polygraphy2.jpg");
+}
+.banner-container li a:nth-child(3){
+  background: url("../img/polygraphy3.jpg");
+}
+.banner-container li a:nth-child(4){
+  background: url("../img/polygraphy4.jpg");
+}
+.banner-container li a:nth-child(5){
+  background: url("../img/polygraphy5.jpg");
+}
+.banner-container li a:nth-child(6){
+  background: url("../img/polygraphy6.jpg");
+}
+.banner-container li a:nth-child(7){
+  background: url("../img/polygraphy7.jpg");
 }
 .banner-container li span.overlay-n {
   background: rgba(0,0,0,0.6);
