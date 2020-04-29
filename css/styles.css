@@ -798,7 +798,7 @@ header {
 }
 .banner-container li a img {
   max-width: none;
-  height: 100vh; /* Высота фотографий */
+  height: 60vh; /* Высота фотографий */
 }
 .banner-container li span.overlay {
   background: rgba(0,0,0,0.3);
