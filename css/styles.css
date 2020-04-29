@@ -800,7 +800,9 @@ header {
 }
 .banner-container li p {
   position: absolute;
-  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  background: rgba(0,0,0,0.8);
 }
 .banner-container li a img {
   max-width: none;
