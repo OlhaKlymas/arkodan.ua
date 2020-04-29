@@ -802,7 +802,8 @@ header {
   position: absolute;
   bottom: 0;
   padding-bottom: 10px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.4);
+  color: #eeeeee;
 }
 .banner-container li a img {
   max-width: none;
