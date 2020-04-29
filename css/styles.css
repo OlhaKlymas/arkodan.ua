@@ -791,10 +791,16 @@ header {
   position: relative;
   z-index: 9;
 }
-.banner-container li a {
-  display: block;
-  padding: 0px;
-  margin: 0px;
+.banner-container li {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+.banner-container li p {
+  position: absolute;
+  width: 100%;
 }
 .banner-container li a img {
   max-width: none;
