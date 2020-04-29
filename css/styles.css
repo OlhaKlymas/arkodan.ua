@@ -784,6 +784,9 @@ header {
   overflow: hidden;
   position: relative;
 }
+.banner-container ul{
+  width: auto;
+}
 .banner-container li {
   float: left;
   overflow: hidden;
