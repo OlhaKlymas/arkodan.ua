@@ -127,10 +127,10 @@ $(function(){
 		var appWidth = bannerLi/remWidth;
 		$(".banner-container li").stop(true, false).animate({width: appWidth},700);
 		$(this).stop(true, false).animate({width: imgWidth},700);
-		$(this).find("span.overlay").stop(true, false).fadeOut();
+		$(this).find("span.overlay-n").stop(true, false).fadeOut();
 	}, function(){
 		$(this).animate({width: winWidth/ulWidthCount},700);
 		$(".banner-container li").animate({width:winWidth/ulWidthCount},700);
-		$(this).find("span.overlay").fadeIn();
+		$(this).find("span.overlay-n").fadeIn();
 	});
 });
