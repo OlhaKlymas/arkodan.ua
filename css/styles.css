@@ -800,6 +800,7 @@ header {
   margin: 0px;
   max-width: none;
   height: 60vh;
+  width: 60px;
 }
 .banner-container li a:nth-child(1){
   background: url("../img/polygraphy1.jpg");
