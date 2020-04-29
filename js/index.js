@@ -1,5 +1,5 @@
 let myFullpage = new fullpage('#fullpage', {
-      anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+      anchors: ['section0', 'section1', 'section1.1', 'section2', 'section3', 'section4', 'section5', 'section6'],
       navigation: true,
       menu:'#menu',
       loopTop:true,
