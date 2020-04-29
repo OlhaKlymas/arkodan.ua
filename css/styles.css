@@ -784,9 +784,6 @@ header {
   overflow: hidden;
   position: relative;
 }
-.banner-container ul{
-  width: auto;
-}
 .banner-container li {
   float: left;
   overflow: hidden;
@@ -798,33 +795,13 @@ header {
   display: block;
   padding: 0px;
   margin: 0px;
+}
+.banner-container li a img {
   max-width: none;
-  height: 60vh;
-  width: 60px;
-}
-.banner-container li a:nth-child(1){
-  background: url("../img/polygraphy1.jpg");
-}
-.banner-container li a:nth-child(2){
-  background: url("../img/polygraphy2.jpg");
-}
-.banner-container li a:nth-child(3){
-  background: url("../img/polygraphy3.jpg");
-}
-.banner-container li a:nth-child(4){
-  background: url("../img/polygraphy4.jpg");
-}
-.banner-container li a:nth-child(5){
-  background: url("../img/polygraphy5.jpg");
-}
-.banner-container li a:nth-child(6){
-  background: url("../img/polygraphy6.jpg");
-}
-.banner-container li a:nth-child(7){
-  background: url("../img/polygraphy7.jpg");
+  height: 60vh; /* Высота фотографий */
 }
 .banner-container li span.overlay-n {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
   width: 100%;
   height: 100%;
   position: absolute;
