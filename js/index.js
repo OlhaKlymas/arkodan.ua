@@ -119,7 +119,6 @@ $(function(){
 	var ulWidthCount = 0;
 	ulWidthCount = $('.banner-container li').length;
 	$(".banner-container li").width(winWidth/ulWidthCount);
-	$(".banner-container li").firstChild().css('width', '100%');
 	$(".banner-container li").hover(function(){
 		ulWidthCount = $('.banner-container li').length;
 		var imgWidth = $(this).find("img").width();
@@ -134,4 +133,5 @@ $(function(){
 		$(".banner-container li").animate({width:winWidth/ulWidthCount},700);
 		$(this).find("span.overlay-n").fadeIn();
 	});
+	$(".banner-container li").firstChild().css('width', '100%');
 });
