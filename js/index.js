@@ -138,8 +138,8 @@ $(function(){
 function ImgHover() {
 	$(".photo-wrap div").hover(
 		function () {
-			$(this).find('img').css('width', 'auto'; 'right', '0');
-			$('.photo1').css('width', '10%');
+			$('.photo-wrap div img').css('width', '10%');
+			$(this).find('img').css({'width':'auto', 'right': '0'});
 		},
 		function () {
 			// $(this).find('img').css('width', '10%');
