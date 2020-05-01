@@ -147,7 +147,7 @@ function ImgHover() {
 					$(".photo-wrap").children(i+1).toggleClass('right');
 				}
 				else if(i < 3){
-					$(".photo-wrap").children(i+1).toggleClass('left');
+					$(".photo-wrap").children(i+1).removeClass('right').addClass('left');
 				}
 			}
 
