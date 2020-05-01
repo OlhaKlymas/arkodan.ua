@@ -851,3 +851,9 @@ header {
   width: 5%;
   margin: 0;
 }
+.photo-wrap div.right{
+  right: 0;
+}
+.photo-wrap div.left{
+  left: 0;
+}
