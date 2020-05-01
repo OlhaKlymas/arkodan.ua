@@ -819,3 +819,13 @@ header {
   top: -3px;
   left: 0px;
 }
+
+.photo-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.photo-wrap div{
+  height: 70vh;
+}
