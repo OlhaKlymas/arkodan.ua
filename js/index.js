@@ -139,7 +139,7 @@ function ImgHover() {
 	$(".photo-wrap div img").click(
 		function () {
 			$('.photo-wrap div').removeClass('active-img').addClass('no-active-img');
-			console.log($(".photo-wrap").length);
+			console.log('aaaaaaa');
 			$(this).parent().removeClass('no-active-img').addClass('active-img');
 			var indexImg = $(this).parent().index();
 			for (var i = indexImg; i < $(".photo-wrap div").length; i++) {
