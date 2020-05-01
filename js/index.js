@@ -144,7 +144,7 @@ function ImgHover() {
 			var indexImg = $(this).parent().index();
 			for (var i = 0; i < $(".photo-wrap div").length; i++) {
 				if (i > 3){
-					$(".photo-wrap").children(i+1).toggleClass('right');
+					$(".photo-wrap").children(i+1).addClass('right');
 				}
 				else if(i < 3){
 					$(".photo-wrap").children(i+1).removeClass('right').addClass('left');
