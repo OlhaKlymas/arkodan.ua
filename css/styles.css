@@ -834,12 +834,13 @@ header {
 }
 .photo-wrap div{
   width: 5%;
+  height: 70vh;
   position: relative;
   filter: grayscale(1);
   transition: 2s;
 }
 .photo-wrap div img{
-  height: 70vh;
+  width: auto;
   box-shadow: 0 0 40px rgba(0,0,0,1.5);
 }
 .photo-wrap div.active-img{
