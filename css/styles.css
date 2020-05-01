@@ -834,7 +834,9 @@ header {
 }
 .photo-wrap div{
   width: 10%;
+  box-shadow: 0 0 40px rgba(0,0,0,1.5);
 }
 .photo-wrap div img{
   height: 70vh;
+  filter: grayscale(1);
 }
