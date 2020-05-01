@@ -844,6 +844,7 @@ header {
 .photo-wrap div.active-img{
   width: auto;
   filter: grayscale(0);
+  margin-right: 50px;
 }
 .photo-wrap div.no-active-img{
   width: 10%;
