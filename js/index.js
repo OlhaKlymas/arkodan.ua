@@ -136,8 +136,12 @@ $(function(){
 });
 
 function ImgHover() {
-	$(".photo-wrap div").hover(){
+	$(".photo-wrap div").hover({
+		function(){
 		$(this).find('img').width('auto');
-	}
+		},
+		function(){ $(this).find('img').width('10%');
+		}
+	})
 }
 ImgHover()
