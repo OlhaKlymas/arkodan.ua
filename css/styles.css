@@ -238,7 +238,7 @@ header {
   /*background-image: url(../img/view2.jpg);*/
 }
 
-.third-section {
+.third-section, .second-section {
   background-color: #04182f; }
 
 .fourth-section {
