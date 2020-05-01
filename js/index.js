@@ -140,7 +140,17 @@ function ImgHover() {
 		function () {
 			$('.photo-wrap div').removeClass('active-img').addClass('no-active-img');
 			console.log($(this).parent().index());
-			$(this).parent().removeClass('no-active-img').addClass('active-img');
+			var indexImg = $(this).parent().removeClass('no-active-img').addClass('active-img');
+			for (var i = 0; i < $(".photo-wrap div").length; i++) {
+				if (i > $(this).parent().index()){
+					$(".photo-wrap div")[i].toggleClass('right');
+				}
+				else if(i < $(this).parent().index()){
+					$(".photo-wrap div")[i].toggleClass('left');
+
+				}
+			}
+
 		});
 }
 ImgHover();

@@ -836,6 +836,7 @@ header {
   width: 5%;
   position: relative;
   filter: grayscale(1);
+  transition: 2s;
 }
 .photo-wrap div img{
   height: 70vh;
