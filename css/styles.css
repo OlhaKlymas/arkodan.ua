@@ -235,7 +235,7 @@ header {
   background-position: center; }
 
 .second-section {
-  /*background-image: url(../img/view2.jpg); */
+  background-image: url(../img/view2.jpg);
 }
 
 .third-section {
@@ -313,8 +313,7 @@ header {
     color: #00acee;
     font-size: 20px; }
 
-/*.second-section .overlay, */
-.third-section .overlay {
+.second-section .overlay, .third-section .overlay {
   width: 100%; }
 .second-section .bg-first, .third-section .bg-first {
   background-color: rgba(4, 24, 47, 0); }
