@@ -139,6 +139,7 @@ function ImgHover() {
 	$(".photo-wrap div img").click(
 		function () {
 			$('.photo-wrap div').removeClass('active-img').addClass('no-active-img');
+			console.log($(this).parent().index());
 			$(this).parent().removeClass('no-active-img').addClass('active-img');
 		});
 }
