@@ -835,6 +835,7 @@ header {
 }
 .photo-wrap div{
   width: 10%;
+  position: relative;
 }
 .photo-wrap div img{
   height: 70vh;
