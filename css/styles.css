@@ -831,13 +831,20 @@ header {
 .photo-wrap div:first-child{
   width: auto;
   margin-right: 50px;
-  filter: grayscale(1);
 }
 .photo-wrap div{
-  width: 10%;
+  width: 5%;
   position: relative;
+  filter: grayscale(1);
 }
 .photo-wrap div img{
   height: 70vh;
   box-shadow: 0 0 40px rgba(0,0,0,1.5);
+}
+.photo-wrap div.active-img{
+  width: auto;
+}
+.photo-wrap div.no-active-img{
+  width: 10%;
+  margin: 0;
 }

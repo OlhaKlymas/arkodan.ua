@@ -138,9 +138,8 @@ $(function(){
 function ImgHover() {
 	$(".photo-wrap div img").click(
 		function () {
-			$('.photo-wrap div').css({'width':'10%', 'right': '0', 'margin':'0'});
-			console.log($(this).parent().prop('data-anchor'));
-			$(this).parent().css({'width':'auto', 'right': '0'});
+			$('.photo-wrap div').addClass('no-active-img');
+			$(this).parent().addClass('active-img');
 		});
 }
 ImgHover();
