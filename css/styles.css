@@ -821,7 +821,7 @@ header {
 }
 
 .photo-wrap {
-  width: 100%;
+  width: 93%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -829,7 +829,8 @@ header {
   overflow: hidden;
 }
 .photo-wrap div:first-child{
-  width: 100%;
+  width: auto;
+  margin-right: 50px;
 }
 .photo-wrap div{
   width: 10%;
