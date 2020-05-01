@@ -140,12 +140,13 @@ function ImgHover() {
 		function () {
 			$('.photo-wrap div').removeClass('active-img').addClass('no-active-img');
 			console.log($(this).parent().index());
-			var indexImg = $(this).parent().removeClass('no-active-img').addClass('active-img');
+			$(this).parent().removeClass('no-active-img').addClass('active-img');
+			var indexImg = $(this).parent().index();
 			for (var i = 0; i < $(".photo-wrap div").length; i++) {
-				if (i > $(this).parent().index()){
+				if (i > indexImg){
 					$(".photo-wrap").children(i+1).toggleClass('right');
 				}
-				else if(i < $(this).parent().index()){
+				else if(i < indexImg){
 					$(".photo-wrap div").children(i+1).toggleClass('left');
 				}
 			}
