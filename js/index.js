@@ -139,7 +139,7 @@ function ImgHover() {
 	$(".photo-wrap div img").hover(
 		function () {
 			$('.photo-wrap div').css({'width':'10%', 'right': '0', 'margin':'0'});
-			console.log($(this).parent().prop('data-anchor'));
+			console.log($(this).parent());
 			$(this).parent().css({'width':'auto', 'right': '0'});
 		},
 		function () {
