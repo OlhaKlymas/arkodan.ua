@@ -139,15 +139,15 @@ function ImgHover() {
 	$(".photo-wrap div img").click(
 		function () {
 			$('.photo-wrap div').removeClass('active-img').addClass('no-active-img');
-			console.log('aaaaaaa');
+			console.log('aaagaaaa');
 			$(this).parent().removeClass('no-active-img').addClass('active-img');
 			var indexImg = $(this).parent().index();
 			for (var i = indexImg; i < $(".photo-wrap div").length; i++) {
-				if (i > 3){
-					$(".photo-wrap").children(i+1).addClass('right');
+				if (i > indexImg){
+					$(".photo-wrap").children(i).removeClass('left').addClass('right');
 				}
-				else if(i < 3){
-					$(".photo-wrap").children(i+1).removeClass('right').addClass('left');
+				else if(i < indexImg){
+					$(".photo-wrap").children(i).removeClass('right').addClass('left');
 				}
 			}
 
