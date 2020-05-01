@@ -134,3 +134,10 @@ $(function(){
 		$(this).find("span.overlay-n").fadeIn();
 	});
 });
+
+function ImgHover() {
+	$(".photo-wrap div").hover(){
+		$(this).find('img').width('auto');
+	}
+}
+ImgHover()
