@@ -125,7 +125,6 @@ $(function(){
 		var bannerLi = winWidth - imgWidth;
 		var remWidth = ulWidthCount - 1;
 		var appWidth = bannerLi/remWidth;
-		$(this).find("p").width(imgWidth);
 		$(".banner-container li").stop(true, false).animate({width: appWidth},700);
 		$(this).stop(true, false).animate({width: imgWidth},700);
 		$(this).find("span.overlay-n").stop(true, false).fadeOut();
